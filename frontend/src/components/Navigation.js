@@ -31,8 +31,8 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#" data-testid="logo" className="flex items-center gap-0.5 font-['Outfit'] font-black text-xl md:text-2xl tracking-tighter">
-          <span className="text-[#005AE0]">ML</span>
-          <span className="text-[#0F172A]">&nbsp;PLOMBERIE</span>
+          <span className={scrolled ? "text-[#005AE0]" : "text-[#60A5FA]"}>ML</span>
+          <span className={scrolled ? "text-[#0F172A]" : "text-white"}>&nbsp;PLOMBERIE</span>
         </a>
 
         {/* Desktop nav */}
@@ -42,7 +42,11 @@ export const Navigation = () => {
               key={link.href}
               href={link.href}
               data-testid={`nav-${link.href.slice(1)}`}
-              className="text-sm font-medium text-[#475569] hover:text-[#005AE0] transition-colors duration-200"
+              className={`text-sm font-medium transition-colors duration-200 ${
+                scrolled
+                  ? "text-[#475569] hover:text-[#005AE0]"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
@@ -60,7 +64,7 @@ export const Navigation = () => {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" data-testid="mobile-menu-toggle">
-                <Menu className="w-6 h-6 text-[#0F172A]" />
+                <Menu className={`w-6 h-6 ${scrolled ? "text-[#0F172A]" : "text-white"}`} />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-white p-6">
