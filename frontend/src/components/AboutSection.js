@@ -1,4 +1,5 @@
-import { MapPin, Award, Clock } from "lucide-react";
+import { MapPin, Award, Clock, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const AboutSection = () => {
   return (
@@ -64,6 +65,21 @@ export const AboutSection = () => {
                   <div className="text-sm text-[#475569]">Intervention rapide 7j/7</div>
                 </div>
               </div>
+            </div>
+
+            {/* CTA */}
+            <div className="flex flex-wrap gap-4 mt-8">
+              <a href="tel:+33620515430" data-testid="about-cta-phone">
+                <Button className="bg-[#005AE0] hover:bg-[#2563EB] text-white rounded-full px-6 h-11 font-semibold btn-shine gap-2">
+                  <Phone className="w-4 h-4" />
+                  Appelez-nous
+                </Button>
+              </a>
+              <a href="#contact" data-testid="about-cta-devis">
+                <Button variant="outline" className="rounded-full px-6 h-11 font-semibold border-[#E2E8F0] text-[#0F172A] hover:border-[#005AE0] hover:text-[#005AE0]">
+                  Demander un devis
+                </Button>
+              </a>
             </div>
           </div>
         </div>

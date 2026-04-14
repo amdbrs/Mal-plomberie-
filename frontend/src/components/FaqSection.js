@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -73,6 +75,24 @@ export const FaqSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
+
+          {/* CTA */}
+          <div className="text-center mt-12 pt-8 border-t border-[#E2E8F0]">
+            <p className="text-[#475569] mb-5">Vous avez une autre question ? Contactez-nous directement.</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="tel:+33620515430" data-testid="faq-cta-phone">
+                <Button className="bg-[#005AE0] hover:bg-[#2563EB] text-white rounded-full px-6 h-11 font-semibold btn-shine gap-2">
+                  <Phone className="w-4 h-4" />
+                  06 20 51 54 30
+                </Button>
+              </a>
+              <a href="#contact" data-testid="faq-cta-contact">
+                <Button variant="outline" className="rounded-full px-6 h-11 font-semibold border-[#E2E8F0] text-[#0F172A] hover:border-[#005AE0] hover:text-[#005AE0]">
+                  Envoyer un message
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

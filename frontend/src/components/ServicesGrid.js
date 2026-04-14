@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 import {
   Wrench,
   Hammer,
@@ -87,6 +89,15 @@ export const ServicesGrid = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-14 reveal">
+          <a href="#contact" data-testid="services-cta">
+            <Button className="bg-[#005AE0] hover:bg-[#2563EB] text-white rounded-full px-8 h-12 text-base font-semibold btn-shine">
+              Demander un devis gratuit
+            </Button>
+          </a>
         </div>
       </div>
     </section>

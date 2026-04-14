@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const PORTFOLIO_ITEMS = [
   {
     url: "https://static.prod-images.emergentagent.com/jobs/6abe0164-00fa-45d7-85b8-7ee084899e3d/images/3d6a7439f5dfcb8dd604bdc4d01677abe9976c059a6ad19cb53c44cd05fd540d.png",
@@ -57,6 +59,15 @@ export const Portfolio = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-14 reveal">
+          <a href="#contact" data-testid="portfolio-cta">
+            <Button className="bg-[#005AE0] hover:bg-[#2563EB] text-white rounded-full px-8 h-12 text-base font-semibold btn-shine">
+              Discuter de votre projet
+            </Button>
+          </a>
         </div>
       </div>
     </section>
