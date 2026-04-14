@@ -1,7 +1,7 @@
 const PORTFOLIO_ITEMS = [
   {
     url: "https://static.prod-images.emergentagent.com/jobs/6abe0164-00fa-45d7-85b8-7ee084899e3d/images/3d6a7439f5dfcb8dd604bdc4d01677abe9976c059a6ad19cb53c44cd05fd540d.png",
-    label: "Renovation Salle de Bain",
+    label: "Rénovation Salle de Bain",
   },
   {
     url: "https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -27,10 +27,10 @@ export const Portfolio = () => {
             Nos Prestations
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-4xl font-bold tracking-tight text-[#0F172A]">
-            Decouvrez nos realisations
+            Découvrez nos réalisations
           </h2>
           <p className="mt-4 text-base md:text-lg text-[#475569] max-w-2xl mx-auto">
-            Quelques exemples de nos interventions en plomberie, renovation et chauffage dans l'Allier.
+            Quelques exemples de nos interventions en plomberie, rénovation et chauffage dans l'Allier.
           </p>
         </div>
 

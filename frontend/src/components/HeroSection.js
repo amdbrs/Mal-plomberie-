@@ -27,7 +27,7 @@ export const HeroSection = () => {
             
             <p className="mt-6 text-base md:text-lg leading-relaxed text-[#475569] max-w-xl">
               ML Plomberie, votre artisan plombier de confiance dans l'Allier.
-              Installation, reparation, depannage et renovation - nous intervenons
+              Installation, réparation, dépannage et rénovation — nous intervenons
               rapidement pour tous vos besoins.
             </p>
             
@@ -49,7 +49,7 @@ export const HeroSection = () => {
             <div className="flex gap-8 mt-10 pt-8 border-t border-[#E2E8F0]">
               <div>
                 <div className="font-['Outfit'] text-2xl font-black text-[#0F172A]">7j/7</div>
-                <div className="text-sm text-[#475569]">Disponibilite</div>
+                <div className="text-sm text-[#475569]">Disponibilité</div>
               </div>
               <div>
                 <div className="font-['Outfit'] text-2xl font-black text-[#0F172A]">Devis</div>

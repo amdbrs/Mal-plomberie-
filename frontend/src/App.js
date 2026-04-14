@@ -53,8 +53,8 @@ function App() {
       <ServicesGrid />
       <Portfolio />
       <AboutSection />
-      <FaqSection />
       <ContactForm />
+      <FaqSection />
       <Footer />
     </div>
   );

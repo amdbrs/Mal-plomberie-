@@ -20,19 +20,19 @@ export const AboutSection = () => {
           {/* Text */}
           <div className="reveal">
             <span className="inline-block text-sm font-semibold text-[#005AE0] uppercase tracking-wider mb-3">
-              A propos
+              À propos
             </span>
             <h2 className="font-['Outfit'] text-3xl md:text-4xl font-bold tracking-tight text-[#0F172A]">
               ML Plomberie, votre artisan de confiance dans l'Allier
             </h2>
             <p className="mt-5 text-base md:text-lg leading-relaxed text-[#475569]">
-              Basee a Moulins dans le departement de l'Allier (03), ML Plomberie met son savoir-faire
-              au service des particuliers et professionnels. Notre engagement : un travail soigne,
+              Basée à Moulins dans le département de l'Allier (03), ML Plomberie met son savoir-faire
+              au service des particuliers et professionnels. Notre engagement : un travail soigné,
               des tarifs transparents et une intervention rapide.
             </p>
             <p className="mt-4 text-base md:text-lg leading-relaxed text-[#475569]">
-              Nous intervenons sur Moulins, Vichy et l'ensemble du departement de l'Allier
-              pour tous vos travaux de plomberie, chauffage et renovation.
+              Nous intervenons sur Moulins, Vichy et l'ensemble du département de l'Allier
+              pour tous vos travaux de plomberie, chauffage et rénovation.
             </p>
 
             {/* Key points */}
@@ -51,8 +51,8 @@ export const AboutSection = () => {
                   <Award className="w-5 h-5 text-[#005AE0]" />
                 </div>
                 <div>
-                  <div className="font-['Outfit'] font-bold text-[#0F172A]">Qualite</div>
-                  <div className="text-sm text-[#475569]">Travail soigne garanti</div>
+                  <div className="font-['Outfit'] font-bold text-[#0F172A]">Qualité</div>
+                  <div className="text-sm text-[#475569]">Travail soigné garanti</div>
                 </div>
               </div>
               <div className="flex flex-col items-start gap-2">
@@ -60,7 +60,7 @@ export const AboutSection = () => {
                   <Clock className="w-5 h-5 text-[#005AE0]" />
                 </div>
                 <div>
-                  <div className="font-['Outfit'] font-bold text-[#0F172A]">Reactif</div>
+                  <div className="font-['Outfit'] font-bold text-[#0F172A]">Réactif</div>
                   <div className="text-sm text-[#475569]">Intervention rapide 7j/7</div>
                 </div>
               </div>

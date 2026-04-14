@@ -17,12 +17,12 @@ import axios from "axios";
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const SERVICES_LIST = [
-  "Plomberie generale",
+  "Plomberie générale",
   "Installation",
-  "Reparation",
-  "Depannage urgent",
-  "Renovation salle de bain",
-  "Pompe a chaleur",
+  "Réparation",
+  "Dépannage urgent",
+  "Rénovation salle de bain",
+  "Pompe à chaleur",
   "Chauffage",
   "Autre",
 ];
@@ -50,10 +50,10 @@ export const ContactForm = () => {
     setLoading(true);
     try {
       await axios.post(`${API}/contact`, form);
-      toast.success("Message envoye avec succes ! Nous vous recontacterons rapidement.");
+      toast.success("Message envoyé avec succès ! Nous vous recontacterons rapidement.");
       setForm({ nom: "", telephone: "", email: "", service: "", message: "" });
     } catch {
-      toast.error("Erreur lors de l'envoi. Veuillez reessayer.");
+      toast.error("Erreur lors de l'envoi. Veuillez réessayer.");
     } finally {
       setLoading(false);
     }
@@ -71,7 +71,7 @@ export const ContactForm = () => {
             Demandez votre devis gratuit
           </h2>
           <p className="mt-4 text-base md:text-lg text-[#475569] max-w-2xl mx-auto">
-            Remplissez le formulaire ci-dessous ou appelez-nous directement. Nous vous repondons sous 24h.
+            Remplissez le formulaire ci-dessous ou appelez-nous directement. Nous vous répondons sous 24h.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export const ContactForm = () => {
                 <Phone className="w-5 h-5 text-[#005AE0]" />
               </div>
               <div>
-                <div className="font-['Outfit'] font-bold text-[#0F172A]">Telephone</div>
+                <div className="font-['Outfit'] font-bold text-[#0F172A]">Téléphone</div>
                 <a href="tel:+33620515430" className="text-[#475569] hover:text-[#005AE0] transition-colors">
                   06 20 51 54 30
                 </a>
@@ -116,7 +116,7 @@ export const ContactForm = () => {
               </div>
               <div>
                 <div className="font-['Outfit'] font-bold text-[#0F172A]">Zone d'intervention</div>
-                <span className="text-[#475569]">Moulins, Vichy et tout le departement de l'Allier (03)</span>
+                <span className="text-[#475569]">Moulins, Vichy et tout le département de l'Allier (03)</span>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ export const ContactForm = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="telephone" className="text-[#0F172A] font-semibold">Telephone</Label>
+                  <Label htmlFor="telephone" className="text-[#0F172A] font-semibold">Téléphone</Label>
                   <Input
                     id="telephone"
                     data-testid="contact-telephone"
@@ -167,7 +167,7 @@ export const ContactForm = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="service" className="text-[#0F172A] font-semibold">Service demande</Label>
+                  <Label htmlFor="service" className="text-[#0F172A] font-semibold">Service demandé</Label>
                   <Select
                     value={form.service}
                     onValueChange={(val) => handleChange("service", val)}
@@ -194,7 +194,7 @@ export const ContactForm = () => {
                 <Textarea
                   id="message"
                   data-testid="contact-message"
-                  placeholder="Decrivez votre besoin..."
+                  placeholder="Décrivez votre besoin..."
                   rows={5}
                   value={form.message}
                   onChange={(e) => handleChange("message", e.target.value)}

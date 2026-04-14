@@ -7,28 +7,28 @@ import {
 
 const FAQ_ITEMS = [
   {
-    question: "Quels sont vos delais d'intervention ?",
-    answer: "Nous intervenons dans les meilleurs delais selon l'urgence de votre situation. Pour les depannages urgents (fuites, canalisations bouchees), nous nous deplacons generalement dans la journee. Pour les travaux planifies, nous fixons un rendez-vous selon vos disponibilites.",
+    question: "Quels sont vos délais d'intervention ?",
+    answer: "Nous intervenons dans les meilleurs délais selon l'urgence de votre situation. Pour les dépannages urgents (fuites, canalisations bouchées), nous nous déplaçons généralement dans la journée. Pour les travaux planifiés, nous fixons un rendez-vous selon vos disponibilités.",
   },
   {
     question: "Intervenez-vous sur Vichy et alentours ?",
-    answer: "Oui, ML Plomberie intervient sur l'ensemble du departement de l'Allier (03), y compris Moulins, Vichy, Montlucon et toutes les communes environnantes. N'hesitez pas a nous contacter pour verifier que nous couvrons votre secteur.",
+    answer: "Oui, ML Plomberie intervient sur l'ensemble du département de l'Allier (03), y compris Moulins, Vichy, Montluçon et toutes les communes environnantes. N'hésitez pas à nous contacter pour vérifier que nous couvrons votre secteur.",
   },
   {
     question: "Proposez-vous des devis gratuits ?",
-    answer: "Absolument ! Tous nos devis sont gratuits et sans engagement. Nous nous deplacons pour evaluer vos besoins et vous fournir un devis detaille avec des tarifs transparents avant toute intervention.",
+    answer: "Absolument ! Tous nos devis sont gratuits et sans engagement. Nous nous déplaçons pour évaluer vos besoins et vous fournir un devis détaillé avec des tarifs transparents avant toute intervention.",
   },
   {
     question: "Quels types de chauffage installez-vous ?",
-    answer: "Nous installons et entretenons tous types de systemes de chauffage : pompes a chaleur, chaudieres gaz et fioul, radiateurs, planchers chauffants, et chauffe-eau. Nous vous conseillons sur la solution la plus adaptee a votre logement et votre budget.",
+    answer: "Nous installons et entretenons tous types de systèmes de chauffage : pompes à chaleur, chaudières gaz et fioul, radiateurs, planchers chauffants, et chauffe-eau. Nous vous conseillons sur la solution la plus adaptée à votre logement et votre budget.",
   },
   {
     question: "Travaillez-vous avec les particuliers et les professionnels ?",
-    answer: "Oui, ML Plomberie intervient aussi bien chez les particuliers que pour les professionnels (commerces, coproprietes, bureaux). Chaque client beneficie du meme niveau de qualite et d'attention.",
+    answer: "Oui, ML Plomberie intervient aussi bien chez les particuliers que pour les professionnels (commerces, copropriétés, bureaux). Chaque client bénéficie du même niveau de qualité et d'attention.",
   },
   {
     question: "Comment puis-je vous contacter en cas d'urgence ?",
-    answer: "En cas d'urgence, le moyen le plus rapide est de nous appeler directement au 06 20 51 54 30. Nous sommes joignables 7 jours sur 7 et ferons notre maximum pour intervenir dans les plus brefs delais.",
+    answer: "En cas d'urgence, le moyen le plus rapide est de nous appeler directement au 06 20 51 54 30. Nous sommes joignables 7 jours sur 7 et ferons notre maximum pour intervenir dans les plus brefs délais.",
   },
 ];
 
@@ -42,10 +42,10 @@ export const FaqSection = () => {
             FAQ
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-4xl font-bold tracking-tight text-[#0F172A]">
-            Questions frequentes
+            Questions fréquentes
           </h2>
           <p className="mt-4 text-base md:text-lg text-[#475569]">
-            Retrouvez les reponses aux questions les plus courantes sur nos services de plomberie et chauffage.
+            Retrouvez les réponses aux questions les plus courantes sur nos services de plomberie et chauffage.
           </p>
         </div>
 

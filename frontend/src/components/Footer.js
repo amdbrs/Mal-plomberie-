@@ -1,19 +1,19 @@
 import { Phone } from "lucide-react";
 
 const FOOTER_SERVICES = [
-  "Plomberie generale",
+  "Plomberie générale",
   "Installation",
-  "Reparation",
-  "Depannage",
-  "Renovation",
-  "Pompe a chaleur",
+  "Réparation",
+  "Dépannage",
+  "Rénovation",
+  "Pompe à chaleur",
   "Chauffage",
 ];
 
 const FOOTER_LINKS = [
   { label: "Services", href: "#services" },
   { label: "Prestations", href: "#prestations" },
-  { label: "A propos", href: "#apropos" },
+  { label: "À propos", href: "#apropos" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -29,8 +29,8 @@ export const Footer = () => {
               <span className="text-[#60A5FA]">ML</span> PLOMBERIE
             </div>
             <p className="mt-4 text-sm text-[#94A3B8] leading-relaxed">
-              Votre artisan plombier de confiance a Moulins, Vichy et dans tout l'Allier (03).
-              Qualite, rapidite et tarifs transparents.
+              Votre artisan plombier de confiance à Moulins, Vichy et dans tout l'Allier (03).
+              Qualité, rapidité et tarifs transparents.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 text-center text-sm text-[#64748B]">
-          &copy; {new Date().getFullYear()} ML Plomberie. Tous droits reserves.
+          &copy; {new Date().getFullYear()} ML Plomberie. Tous droits réservés.
         </div>
       </div>
     </footer>

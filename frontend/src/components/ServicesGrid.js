@@ -11,38 +11,38 @@ import {
 const SERVICES = [
   {
     icon: Wrench,
-    title: "Plomberie Generale",
-    description: "Entretien, reparation et installation de tous vos equipements sanitaires et canalisations.",
+    title: "Plomberie Générale",
+    description: "Entretien, réparation et installation de tous vos équipements sanitaires et canalisations.",
   },
   {
     icon: Hammer,
     title: "Installation",
-    description: "Pose de robinetterie, sanitaires, chauffe-eau, cumulus et systemes de plomberie complets.",
+    description: "Pose de robinetterie, sanitaires, chauffe-eau, cumulus et systèmes de plomberie complets.",
   },
   {
     icon: AlertTriangle,
-    title: "Depannage Urgent",
-    description: "Intervention rapide pour fuites, canalisations bouchees et pannes urgentes 7j/7.",
+    title: "Dépannage Urgent",
+    description: "Intervention rapide pour fuites, canalisations bouchées et pannes urgentes 7j/7.",
   },
   {
     icon: PenTool,
-    title: "Reparation",
-    description: "Diagnostic et reparation de tous types de pannes : fuites, joints, mecanismes, tuyauterie.",
+    title: "Réparation",
+    description: "Diagnostic et réparation de tous types de pannes : fuites, joints, mécanismes, tuyauterie.",
   },
   {
     icon: ShowerHead,
-    title: "Renovation",
-    description: "Renovation complete de salle de bain et cuisine. Transformation de vos espaces.",
+    title: "Rénovation",
+    description: "Rénovation complète de salle de bain et cuisine. Transformation de vos espaces.",
   },
   {
     icon: Fan,
-    title: "Pompe a Chaleur",
-    description: "Installation et entretien de pompes a chaleur pour un chauffage economique et ecologique.",
+    title: "Pompe à Chaleur",
+    description: "Installation et entretien de pompes à chaleur pour un chauffage économique et écologique.",
   },
   {
     icon: Flame,
     title: "Chauffage",
-    description: "Installation, entretien et depannage de chaudieres, radiateurs et planchers chauffants.",
+    description: "Installation, entretien et dépannage de chaudières, radiateurs et planchers chauffants.",
   },
 ];
 
@@ -59,7 +59,7 @@ export const ServicesGrid = () => {
             Des solutions pour chaque besoin
           </h2>
           <p className="mt-4 text-base md:text-lg text-[#475569] max-w-2xl mx-auto">
-            Plomberie, chauffage, renovation - ML Plomberie vous accompagne dans tous vos projets avec expertise et professionnalisme.
+            Plomberie, chauffage, rénovation — ML Plomberie vous accompagne dans tous vos projets avec expertise et professionnalisme.
           </p>
         </div>
 
