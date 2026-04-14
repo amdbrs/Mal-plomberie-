@@ -1,34 +1,128 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* ML PLOMBERIE - Custom Styles */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Glassmorphism nav */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.App-link {
-    color: #61dafb;
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Stagger children */
+.stagger-children > .reveal:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > .reveal:nth-child(2) { transition-delay: 80ms; }
+.stagger-children > .reveal:nth-child(3) { transition-delay: 160ms; }
+.stagger-children > .reveal:nth-child(4) { transition-delay: 240ms; }
+.stagger-children > .reveal:nth-child(5) { transition-delay: 320ms; }
+.stagger-children > .reveal:nth-child(6) { transition-delay: 400ms; }
+.stagger-children > .reveal:nth-child(7) { transition-delay: 480ms; }
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 90, 224, 0.1);
+  border-color: #005AE0;
+}
+
+/* Portfolio hover */
+.portfolio-item {
+  overflow: hidden;
+}
+.portfolio-item img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+.portfolio-item .portfolio-overlay {
+  transition: opacity 0.4s ease;
+}
+
+/* Hero float animation */
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.hero-float {
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+/* Pulse ring for phone CTA */
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(0, 90, 224, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 90, 224, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 90, 224, 0); }
+}
+.pulse-ring {
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #005AE0, #2563EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Decorative offset box */
+.offset-box::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  background: #DBEAFE;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+/* FAQ accordion custom styling */
+.faq-trigger[data-state="open"] svg {
+  color: #005AE0;
+}
+
+/* Button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+.btn-shine:hover::after {
+  left: 100%;
+}
+
+/* Smooth anchor offset for sticky nav */
+section[id] {
+  scroll-margin-top: 80px;
 }
