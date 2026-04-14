@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left content */}
-          <div className="reveal-left">
+          <div className="reveal-left hero-instant">
             <div className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#005AE0] px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-[#005AE0] rounded-full" />
               Moulins &bull; Vichy &bull; Allier (03)
@@ -63,7 +63,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Right image */}
-          <div className="hidden lg:flex justify-center reveal-right">
+          <div className="hidden lg:flex justify-center reveal-right hero-instant">
             <div className="hero-float relative">
               <img
                 src="https://images.unsplash.com/photo-1758448018619-4cbe2250b9ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBiYXRocm9vbSUyMHJlbm92YXRpb258ZW58MHx8fHwxNzc2MTc1MzYyfDA&ixlib=rb-4.1.0&q=85"

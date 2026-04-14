@@ -33,10 +33,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Initial setup
-    setupObserver();
+    // Make hero elements visible immediately
+    document.querySelectorAll(".hero-instant").forEach((el) => {
+      el.classList.add("visible");
+    });
 
-    // Re-observe after a short delay to catch dynamically rendered elements
+    // Setup scroll observer for the rest
+    setupObserver();
     const timer = setTimeout(setupObserver, 500);
 
     return () => {

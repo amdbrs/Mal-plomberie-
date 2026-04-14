@@ -95,7 +95,7 @@ export const ServicesGrid = () => {
                 key={i}
                 data-testid={`service-card-${i}`}
                 className={`reveal-up service-card-modern group relative rounded-2xl p-[1px] cursor-default ${
-                  service.featured ? "sm:col-span-2 lg:col-span-1" : ""
+                  i === 0 || i === 6 ? "lg:col-span-2" : ""
                 }`}
               >
                 {/* Gradient border on hover */}
