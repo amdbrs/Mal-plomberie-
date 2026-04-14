@@ -7,7 +7,7 @@ export const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
-          <div className="reveal relative">
+          <div className="reveal-left relative">
             <div className="offset-box relative z-10">
               <img
                 src="https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxwbHVtYmVyJTIwd29ya2luZ3xlbnwwfHx8fDE3NzYxNzQyMTh8MA&ixlib=rb-4.1.0&q=85"
@@ -19,7 +19,7 @@ export const AboutSection = () => {
           </div>
 
           {/* Text */}
-          <div className="reveal">
+          <div className="reveal-right">
             <span className="inline-block text-sm font-semibold text-[#005AE0] uppercase tracking-wider mb-3">
               À propos
             </span>

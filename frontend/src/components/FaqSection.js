@@ -39,7 +39,7 @@ export const FaqSection = () => {
     <section id="faq" data-testid="faq-section" className="py-20 md:py-32 bg-[#F8FAFC]">
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         {/* Section header */}
-        <div className="text-center mb-12 reveal">
+        <div className="text-center mb-12 reveal-blur">
           <span className="inline-block text-sm font-semibold text-[#005AE0] uppercase tracking-wider mb-3">
             FAQ
           </span>
@@ -52,7 +52,7 @@ export const FaqSection = () => {
         </div>
 
         {/* Accordion */}
-        <div className="reveal">
+        <div className="reveal-scale">
           <Accordion type="single" collapsible className="w-full">
             {FAQ_ITEMS.map((item, i) => (
               <AccordionItem

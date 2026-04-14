@@ -24,7 +24,7 @@ export const Portfolio = () => {
     <section id="prestations" data-testid="portfolio-section" className="py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section header */}
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-16 reveal-blur">
           <span className="inline-block text-sm font-semibold text-[#005AE0] uppercase tracking-wider mb-3">
             Nos Prestations
           </span>
@@ -42,7 +42,7 @@ export const Portfolio = () => {
             <div
               key={i}
               data-testid={`portfolio-item-${i}`}
-              className={`reveal portfolio-item rounded-2xl relative group cursor-pointer ${
+              className={`reveal-scale portfolio-item rounded-2xl relative group cursor-pointer ${
                 i === 0 ? "col-span-2 row-span-2" : ""
               }`}
             >

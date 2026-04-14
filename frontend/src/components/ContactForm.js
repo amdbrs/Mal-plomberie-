@@ -63,7 +63,7 @@ export const ContactForm = () => {
     <section id="contact" data-testid="contact-section" className="py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section header */}
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-16 reveal-blur">
           <span className="inline-block text-sm font-semibold text-[#005AE0] uppercase tracking-wider mb-3">
             Contact
           </span>
@@ -77,7 +77,7 @@ export const ContactForm = () => {
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Contact info */}
-          <div className="lg:col-span-2 reveal space-y-6">
+          <div className="lg:col-span-2 reveal-left space-y-6">
             <div className="flex items-start gap-4">
               <div className="w-11 h-11 bg-[#EFF6FF] rounded-xl flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5 text-[#005AE0]" />
@@ -122,7 +122,7 @@ export const ContactForm = () => {
           </div>
 
           {/* Form */}
-          <div className="lg:col-span-3 reveal">
+          <div className="lg:col-span-3 reveal-right">
             <form
               onSubmit={handleSubmit}
               data-testid="contact-form"

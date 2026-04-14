@@ -27,7 +27,7 @@ function App() {
       { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
-    document.querySelectorAll(".reveal").forEach((el) => {
+    document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-blur, .reveal-up, .line-grow, .counter-animate").forEach((el) => {
       observerRef.current.observe(el);
     });
   }, []);
