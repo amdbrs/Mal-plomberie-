@@ -1,0 +1,110 @@
+{
+  "project_name": "ML PLOMBERIE",
+  "app_type": "landing_page",
+  "design_system": {
+    "theme": "light",
+    "archetype": "Authority & Trust (Archetype 4 Variant)",
+    "reasoning": "Plumbing and heating services require a high level of trust, clarity, and professionalism. The modern white and blue tones perfectly convey cleanliness, water (plumbing), and reliability.",
+    "colors": {
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surface_dark": "#0F172A",
+      "primary": "#005AE0",
+      "primary_hover": "#2563EB",
+      "primary_foreground": "#FFFFFF",
+      "text_main": "#0F172A",
+      "text_muted": "#475569",
+      "border": "#E2E8F0"
+    },
+    "typography": {
+      "heading_font": "Outfit",
+      "body_font": "DM Sans",
+      "logo_treatment": "Text-based: 'ML PLOMBERIE' using Outfit, font-black, tracking-tighter. 'ML' in primary blue (#005AE0) and 'PLOMBERIE' in dark slate (#0F172A).",
+      "hierarchy": {
+        "h1": "text-5xl md:text-6xl font-black tracking-tighter text-text_main",
+        "h2": "text-3xl md:text-4xl font-bold tracking-tight text-text_main",
+        "h3": "text-xl md:text-2xl font-semibold text-text_main",
+        "body": "text-base md:text-lg leading-relaxed text-text_muted"
+      }
+    },
+    "spacing_and_layout": {
+      "section_padding": "py-20 md:py-32",
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "border_radius": "rounded-2xl",
+      "grid_strategy": "Generous spacing (gap-8 to gap-12). Bento grids for services, asymmetric grids for portfolio.",
+      "glassmorphism": "bg-white/80 backdrop-blur-xl border-b border-white/20"
+    },
+    "animations": {
+      "scroll": "Use Lenis for smooth scrolling.",
+      "reveal": "Framer Motion staggered fade-in-up for lists and grids.",
+      "hover": "Subtle transform -translate-y-1, shadow-lg, and image scale-105 on hover."
+    }
+  },
+  "media": {
+    "hero_image": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/6abe0164-00fa-45d7-85b8-7ee084899e3d/images/b9a79a05e9c4f420f943aaa20344d5b46a7adcfe340c9e99f4927d915f1ae196.png",
+      "description": "Abstract white and blue flowing waves, used as a hero graphic or background to convey modernity and fluidity."
+    },
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxwbHVtYmVyJTIwd29ya2luZ3xlbnwwfHx8fDE3NzYxNzQyMTh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional plumber at work, used in the About section to build trust."
+    },
+    "portfolio": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/6abe0164-00fa-45d7-85b8-7ee084899e3d/images/3d6a7439f5dfcb8dd604bdc4d01677abe9976c059a6ad19cb53c44cd05fd540d.png",
+        "description": "High-end bathroom renovation (AI generated)."
+      },
+      {
+        "url": "https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Plumber installing steel pipes."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1638799869566-b17fa794c4de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3NzYxNzQyMTh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern luxury bathroom with freestanding tub."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1732395805034-e0bf859665e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwyfHxodmFjJTIwdGVjaG5pY2lhbnxlbnwwfHx8fDE3NzYxNzQyMTh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "HVAC technician standing confidently."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "Navigation",
+      "instructions": "Sticky header with glassmorphism. Left: Text Logo. Right: Navigation links (Services, Prestations, À Propos, FAQ) and a prominent '06 20 51 54 30' CTA button in primary blue. Mobile: Hamburger menu."
+    },
+    {
+      "name": "Hero Section",
+      "instructions": "Asymmetric layout. Left side: High-impact H1 'Votre Expert en Plomberie et Chauffage à Moulins & Vichy'. Subtitle emphasizing speed, quality, and local presence (03 Allier). Two CTAs: 'Demander un devis' (Solid Blue) and 'Nos Prestations' (Outline). Right side: The abstract blue/white waves image with a slight floating animation."
+    },
+    {
+      "name": "Services Grid",
+      "instructions": "Use a bento-style grid (Control Room grid style) for density and clarity. Cards for: Plomberie générale, Installations, Réparation, Dépannage, Rénovation, Pompe à chaleur, Chauffage. Use Lucide-react icons in a blue circular background for each service. Hover effects: translate-y-1 with subtle blue border."
+    },
+    {
+      "name": "About & Zone",
+      "instructions": "Split section (50/50). Text: About ML PLOMBERIE, emphasizing local expertise in Allier (03), Moulins, and Vichy. Visual: Use the 'about_image' with a nice rounded-2xl border and an offset background decorative square in light blue (#E0E7FF)."
+    },
+    {
+      "name": "Portfolio (Prestations)",
+      "instructions": "Tetris Grid layout showcasing the 4 portfolio images. Grid items should have overflow-hidden, and the images should scale up (scale-105) gracefully on hover. Add a subtle dark gradient overlay at the bottom of each image with a white text label (e.g., 'Rénovation Salle de Bain', 'Installation Chauffage')."
+    },
+    {
+      "name": "FAQ",
+      "instructions": "SEO optimized FAQ. Use Shadcn Accordion component. Questions like 'Quels sont vos délais d\\'intervention ?', 'Intervenez-vous sur Vichy et alentours ?', 'Proposez-vous des devis gratuits ?'. Style with a clean white background, dark text, and primary blue icon on expansion."
+    },
+    {
+      "name": "Contact Form",
+      "instructions": "A split layout. Left: Contact info (Phone: 06 20 51 54 30, Email, Operating hours, Map placeholder or Zone text). Right: A clean Shadcn Form inside a card. Fields: Nom, Téléphone, Email, Service demandé, Message. Submit button full width primary blue."
+    },
+    {
+      "name": "Footer",
+      "instructions": "Dark theme footer (bg-surface_dark, text-white). Columns for: Logo/Description, Quick Links, Services, Contact. Copyright at the bottom."
+    }
+  ],
+  "technical_instructions": {
+    "components": "Use pure HTML/Tailwind for layouts. Use Shadcn components for Form, Accordion, Input, Button, Textarea. REMEMBER to use .js for your files (not .tsx) as configured in the system.",
+    "testing": "All interactive elements (buttons, accordion triggers, form inputs) MUST have data-testid attributes (e.g., data-testid='hero-cta-button', data-testid='contact-submit').",
+    "icons": "Use lucide-react for all iconography."
+  }
+}
