@@ -66,8 +66,8 @@ export const HeroSection = () => {
           <div className="hidden lg:flex justify-center">
             <div className="hero-float relative">
               <img
-                src="https://static.prod-images.emergentagent.com/jobs/6abe0164-00fa-45d7-85b8-7ee084899e3d/images/b9a79a05e9c4f420f943aaa20344d5b46a7adcfe340c9e99f4927d915f1ae196.png"
-                alt="ML Plomberie - Expert plombier"
+                src="https://images.unsplash.com/photo-1758448018619-4cbe2250b9ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBiYXRocm9vbSUyMHJlbm92YXRpb258ZW58MHx8fHwxNzc2MTc1MzYyfDA&ixlib=rb-4.1.0&q=85"
+                alt="Salle de bain moderne - ML Plomberie"
                 className="w-full max-w-lg rounded-3xl"
                 data-testid="hero-image"
               />
