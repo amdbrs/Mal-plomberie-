@@ -8,7 +8,7 @@ export const HeroSection = () => {
     <section data-testid="hero-section" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-zoom"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
       {/* Dark overlay gradient */}
