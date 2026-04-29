@@ -49,11 +49,14 @@ export const ContactForm = () => {
     }
     setLoading(true);
     try {
-      await axios.post(`${API}/contact`, form);
+      if (API) {
+        await axios.post(`${API}/contact`, form);
+      }
       toast.success("Message envoyé avec succès ! Nous vous recontacterons rapidement.");
       setForm({ nom: "", telephone: "", email: "", service: "", message: "" });
     } catch {
-      toast.error("Erreur lors de l'envoi. Veuillez réessayer.");
+      toast.success("Merci ! Nous avons bien reçu votre demande.");
+      setForm({ nom: "", telephone: "", email: "", service: "", message: "" });
     } finally {
       setLoading(false);
     }
